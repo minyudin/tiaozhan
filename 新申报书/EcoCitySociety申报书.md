@@ -144,15 +144,15 @@
 
 **大语言模型驱动的社会仿真正从"底层研究库"走向"可评估的城市治理平台"。**随着大语言模型推理与角色扮演能力的跃升，基于生成式智能体的社会仿真成为计算社会科学与智慧治理的前沿方向<sup>\[14-17\]</sup>。近年来，Google DeepMind 提出生成式社会仿真底层库 **Concordia（2023）**，面向物理/社会/数字环境，采用 Game Master 机制由智能体以自然语言描述行动、由 GM 负责环境演化与结果落地，为搭建社会实验提供了通用底座<sup>\[14\]</sup>，如图1-5。
 
-![](media/placeholder.png)
+![](media/concordia_fig1.png)
 
-图1-5：Concordia 生成式社会仿真框架：Game Master 机制与智能体-环境交互架构（占位图，待替换为原论文架构图）
+图1-5：Concordia 生成式社会仿真框架：智能体产生行动尝试，Game Master（GM）将其转化为事件陈述并维护世界状态（图源：Vezhnevets et al., arXiv:2312.03664, Figure 1）
 
 面向社会智能评测，**Sotopia（2023）** 以 SOTOPIA-Eval 框架支持多场景社交互动与协作、竞争、沟通等社会常识评估<sup>\[15\]</sup>。面向大规模社交媒体生态，**OASIS（2024）** 可模拟最多 **100 万** 用户，围绕 Twitter/Reddit 类平台建模动态社交网络、推荐系统与关注/评论行为，适合研究信息传播与群体极化<sup>\[16\]</sup>，如图1-6。
 
-![](media/placeholder.png)
+![](media/oasis_sotopia_combo.png)
 
-图1-6：(a)OASIS 百万级用户社交媒体仿真架构 (b)Sotopia 社会智能评测场景示例（组图占位，待替换为原论文插图）
+图1-6：(a)OASIS 百万级用户社交媒体仿真工作流：环境服务器、推荐系统、智能体模块、时间引擎与可扩展推理器（图源：Yang et al., arXiv:2411.11581, Figure 2） (b)Sotopia 开放式社会交互环境：场景与社会目标采样、角色采样与交互仿真（图源：Zhou et al., arXiv:2310.11667, Figure 1）
 
 面向社会行为与经济活动，**AgentSociety（2024）** 提供 human-like decision-making 与 interviews/surveys/interventions/metrics recording 等研究工具链<sup>\[17\]</sup>，适合开展社会实验；**AgentTorch（2024）** 强调超大规模 population simulation 的高性能计算与可扩展实验<sup>\[18\]</sup>，属于高性能仿真底层设施。上述工作为城市多智能体仿真奠定了坚实基础，但或偏底层研究库、或聚焦单一场景，在**跨域整合、因果评估与工程化落地**上仍存在明显空缺，各框架与本平台的逐项对比详见 4.1 节竞品对比表。
 
