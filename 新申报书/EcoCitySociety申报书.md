@@ -215,9 +215,9 @@
 
 平台采用五层总体架构，如图2-2。**数据采集层（感知层）**收集来自 IoT 设备、移动终端与外部 API 的原始数据（气候、交通、社会经济等），提供基础数据支持；**数据处理与分析层（处理层）**完成数据清洗、异常值检测与去除，并以机器学习与深度学习算法进行数据建模、预测分析与风险评估；**智能决策与仿真层（决策层）**基于数据分析结果提供决策支持、仿真模拟与优化方案，涵盖多智能体系统与优化调度；**应用服务与执行层（执行层）**提供用户交互界面（UI/UX）、数据服务 API 接口与业务流程支持；**监控与反馈层（监控层）**实时监控系统状态、数据质量与服务健康，内置异常预警与系统自我优化机制。技术栈覆盖 Python & R、TensorFlow、Spark & Hadoop（数据处理），AWS、Azure、Kubernetes、Docker（云计算与部署），Agent-based Modeling、Reinforcement Learning、SimPy & AnyLogic、Optuna & Hyperopt（决策与仿真），SSL/TLS、IDS/IPS、IAM（网络安全）及 NLP、OpenCV、GNN（深度学习）。
 
-![](media/placeholder.png)
+![](media/fig2-2.png)
 
-图2-2：平台五层总体架构图（占位图，待替换）
+图2-2：平台五层总体架构图
 
 2.2.2 技术特点
 
