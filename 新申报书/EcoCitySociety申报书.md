@@ -31,6 +31,10 @@
 > 1.2 全貌剖析
 >
 > 1.3 研究现状
+>
+> > 1.3.1 学术实务
+> >
+> > 1.3.2 积累问题
 
 [2. 解决方案](#)
 
@@ -38,21 +42,53 @@
 >
 > 2.2 系统架构与技术特点
 >
+> > 2.2.1 总体架构
+> >
+> > 2.2.2 技术特点
+>
 > 2.3 智能体系统
 >
 > 2.4 环境仿真与社会网络
 >
+> > 2.4.1 环境仿真
+> >
+> > 2.4.2 社会网络
+>
 > 2.5 数字孪生与多智能体强化学习
 >
+> > 2.5.1 数字孪生底座
+> >
+> > 2.5.2 多智能体强化学习训练工厂
+>
 > 2.6 因果推断与质性研究
+>
+> > 2.6.1 因果推断工具链
+> >
+> > 2.6.2 质性研究工具体系
 >
 > 2.7 跨模块集成
 >
 > 2.8 创新性与先进性
+>
+> > 2.8.1 四大核心创新点
+> >
+> > 2.8.2 典型案例验证
 
 [3. 实验推进计划](#)
 
+> 3.1 研发历程
+>
+> 3.2 技术沉淀与成果积累
+>
+> 3.3 平台支撑与实验保障
+
 [4. 市场前景与效益分析](#)
+
+> 4.1 市场前景分析
+>
+> 4.2 经济与社会效益分析
+>
+> 4.3 展望
 
 [参考文献](#)
 
@@ -60,7 +96,7 @@
 
 摘要
 
-本研究面向城市复杂系统治理与科学决策，提出并研发**城市社会—环境多智能体仿真平台 EcoCitySociety**，通过将**大语言模型智能体**、**社会网络演化**、**环境过程仿真**与**结构因果推断**深度耦合，构建"**仿真—训练—评估—溯源**"一体化闭环，把不可复现、难量化的社会治理问题转化为**可计算、可评估、可追溯**的产品化流程。平台以统一抽象为底座，内置 **42 个核心类**、**87 个公共 API 接口**（其中 **23 个** 为 STABLE 稳定接口）、**36 种** 标准化社会角色，单节点支持最大 **100 万** 智能体规模；环境侧提供 **22 种** 专业仿真器覆盖 **8 大** 城市子系统，社会网络侧单图支持 **1000 万** 节点，实现从微观关系到宏观涌现的全栈建模。基于该平台，团队完成**美国关税上调的百万人口·百年结构化推演**、**毒品政策渐进放松的七阶段行为扩散推演**、**中国近代史机制仿真与反事实推演**及**校园性欺凌仿真与预防**等典型案例，验证了跨领域因果—仿真闭环能力。平台依托湘潭大学**湖南国家应用数学中心**（全国首批国家应用数学中心）与**超级异构并行计算集群**（CPU 双精度峰值 **509 万亿次** + GPU 单精度峰值 **1552 万亿次**）提供算法与算力支撑；获**中国工程院院士**指导，并受相关政产学研合作网络支持。与 Concordia、OASIS、AgentSociety 等国内外框架相比，EcoCitySociety 的核心优势在于**跨域整合能力**——把社会、环境、治理、因果与评估置于同一平台，目标是为城市治理装上可推演、可复现的"**数字沙盘**"。
+本研究面向城市复杂系统治理与科学决策，提出并研发**城市社会—环境多智能体仿真平台 EcoCitySociety**，通过将**大语言模型智能体**、**社会网络演化**、**环境过程仿真**与**结构因果推断**深度耦合，构建"**仿真—训练—评估—溯源**"一体化闭环，把不可复现、难量化的社会治理问题转化为**可计算、可评估、可追溯**的产品化流程。平台以统一抽象为底座，内置 **42 个核心类**、**87 个公共 API 接口**（其中 **23 个** 为 STABLE 稳定接口）、**36 种** 标准化社会角色，单节点支持最大 **100 万** 智能体规模；环境侧提供 **22 种** 专业仿真器覆盖 **8 大** 城市子系统，社会网络侧单图支持 **1000 万** 节点，实现从微观关系到宏观涌现的全栈建模。基于该平台，团队完成**美国关税上调的百万人口·百年结构化推演**、**毒品政策渐进放松的七阶段行为扩散推演**、**中国近代史机制仿真与反事实推演**及**校园性欺凌仿真与预防**等典型案例，验证了跨领域因果—仿真闭环能力。平台依托湘潭大学**湖南国家应用数学中心**（全国首批国家应用数学中心）与**超级异构并行计算集群**（CPU 双精度峰值 **509 万亿次** + GPU 单精度峰值 **1552 万亿次**）提供算法与算力支撑；团队依托国家自然科学基金与国家社科基金多项课题积累，并获清华大学计算机 AI 领域认证专家技术交流支持。与 Concordia、OASIS、AgentSociety 等国内外框架相比，EcoCitySociety 的核心优势在于**跨域整合能力**——把社会、环境、治理、因果与评估置于同一平台，目标是为城市治理装上可推演、可复现的"**数字沙盘**"。
 
 关键词：城市多智能体仿真、大语言模型智能体、社会网络演化、结构因果推断、数字孪生、智慧治理
 
@@ -432,8 +468,56 @@ MARL 子系统构建"**工厂化**"标准训练体系：基线算法注册中心
 
 <span id="_ref" class="anchor"></span>参考文献
 
-\[1\]-\[18\]（占位：待按正文上标顺序补充规范文献条目，包括政策文件、行业报告、Concordia/Sotopia/OASIS/AgentSociety/AgentTorch 原始论文等。）
+\[1\] 中共中央关于制定国民经济和社会发展第十五个五年规划的建议\[Z\]. 2025.
+
+\[2\] 国务院. 2025年国务院政府工作报告\[R\]. 北京: 人民出版社, 2025.
+
+\[3\] 中共中央关于进一步全面深化改革、推进中国式现代化的决定\[Z\]. 2024.
+
+\[4\] 国务院. 关于深入实施“人工智能+”行动的意见\[Z\]. 2025.
+
+\[5\] 工业和信息化部等. 制造业数字化转型行动方案\[Z\]. 2024.
+
+\[6\] Park J S, O'Brien J, Cai C J, et al. Generative agents: Interactive simulacra of human behavior\[C\]//Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology (UIST). 2023: 1-22.
+
+\[7\] Wang L, Ma C, Feng X, et al. A survey on large language model based autonomous agents\[J\]. Frontiers of Computer Science, 2024, 18(6): 186345.
+
+\[8\] Deng T, Zhang K, Shen Z J M. A systematic review of a digital twin city: A new pattern of urban governance toward smart cities\[J\]. Journal of Management Science and Engineering, 2021, 6(2): 125-134.
+
+\[9\] Gao C, Lan X, Li N, et al. Large language models empowered agent-based modeling and simulation: A survey and perspectives\[J\]. Humanities and Social Sciences Communications, 2024, 11: 1259.
+
+\[10\] 国家发展改革委等. 深化智慧城市发展 推进全域数字化转型行动计划\[Z\]. 2025.
+
+\[11\] 中商产业研究院. 2025-2030年中国智慧城市行业市场调研报告\[R\]. 2025.
+
+\[12\] 普华永道. 2025全球城市治理趋势报告\[R\]. 2025.
+
+\[13\] 中国信息通信研究院. 数字孪生城市蓝皮书（2025）\[R\]. 北京: 中国信通院, 2025.
+
+\[14\] Vezhnevets A S, Agapiou J P, Aharon A, et al. Generative agent-based modeling with actions grounded in physical, social, or digital space using Concordia\[J\]. arXiv preprint arXiv:2312.03664, 2023.
+
+\[15\] Zhou X, Zhu H, Mathur L, et al. SOTOPIA: Interactive evaluation for social intelligence in language agents\[C\]//The Twelfth International Conference on Learning Representations (ICLR). 2024.
+
+\[16\] Yang Z, Zhang Z, Zheng Z, et al. OASIS: Open agent social interaction simulations with one million agents\[J\]. arXiv preprint arXiv:2411.11581, 2024.
+
+\[17\] Piao J, Yan Y, Zhang J, et al. AgentSociety: Large-scale simulation of LLM-driven generative agents advances understanding of human behaviors and society\[J\]. arXiv preprint arXiv:2502.08691, 2025.
+
+\[18\] Chopra A, Kumar S, Giray-Kuru D, et al. On the limits of agency in agent-based models\[C\]//Proceedings of the 24th International Conference on Autonomous Agents and Multiagent Systems (AAMAS). 2025.
+
+（注：以上文献条目为初步整理版本，提交前建议逐条核对发文机关、年份、作者与页码信息。）
 
 <span id="_appendix" class="anchor"></span>附录
 
-（占位：待补充平台界面截图、案例完整推演报告、论文/专利/软著证明材料、合作协议与支撑平台证明等。）
+附录拟收录以下支撑材料（待附原件扫描件与截图）：
+
+附录A：平台界面与功能演示截图（Dashboard、场景配置、仿真运行、评估报告导出）；
+
+附录B：四大典型案例完整推演报告（关税推演、毒品政策推演、近代史反事实推演、校园性欺凌仿真）；
+
+附录C：学术成果证明材料（《Infomat》录用/发表证明、发明专利证书、软件著作权证书）；
+
+附录D：竞赛获奖证书（MCM/ICM、计算机设计大赛、数学建模竞赛等八项）；
+
+附录E：课题立项与经费证明（国家自然科学基金、国家社科基金后期资助、横向课题合同）；
+
+附录F：平台支撑证明（湖南国家应用数学中心、超级异构并行计算集群使用权限）与合作协议。
